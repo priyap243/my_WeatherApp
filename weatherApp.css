@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/428/original/sandbeach.jpeg?1686655204);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Playfair", serif;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.container {
+  color: whitesmoke;
+  padding: 20px 50px;
+}
+
+header {
+  display: block;
+  margin-top: 0em;
+  margin-left: 50px;
+}
+
+#search-input {
+  margin-top: 0em;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: 0px solid whitesmoke;
+}
+
+#search-city {
+  margin-top: 0em;
+  padding: 5px 15px;
+  border-radius: 8px;
+  border: 0px solid whitesmoke;
+  background-color: whitesmoke;
+  color: #3a3a3e;
+  margin-left: 20px;
+}
+
+#search-city:hover {
+  background-color: rgba(24, 24, 27, 0.6);
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+#current-location {
+  margin-top: 0em;
+  padding: 5px 15px;
+  border-radius: 8px;
+  border: 0px solid whitesmoke;
+  background-color: whitesmoke;
+  color: #3a3a3e;
+  margin-left: 20px;
+}
+
+#current-location:hover {
+  background-color: rgba(24, 24, 27, 0.6);
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.date-container {
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 200;
+}
+
+.date-container .am-pm {
+  font-size: 30px;
+  font-weight: 200;
+  margin-left: 20px;
+}
+
+.date-container h2 {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.place-container {
+  top: 0px;
+  text-align: end;
+  float: right;
+}
+
+.place-container .time-zone {
+  font-size: 30px;
+  font-weight: 200;
+  text-align: end;
+  text-transform: capitalize;
+}
+
+.place-container .location-icon {
+  font-size: 25px;
+  padding: 8px;
+}
+
+.place-container .country {
+  font-size: 15px;
+  font-weight: 700;
+  right: 30px;
+  position: relative;
+  float: right;
+}
+
+.place-container .temperature {
+  position: relative;
+  margin-top: 130px;
+  right: 300px;
+}
+
+.current-temperature {
+  font-size: 80px;
+  font-weight: 200;
+}
+
+h3 a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.units {
+  position: relative;
+  top: -40px;
+}
+
+.celsius-link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.farhenheit-link {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 200;
+}
+
+.weather-description {
+  font-size: 30px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.current-info {
+  justify-content: space-between;
+  display: flex;
+}
+
+.current-info .weather-stats {
+  background: rgba(24, 24, 27, 0.6);
+  position: absolute;
+  left: 400px;
+  top: 220px;
+  padding: 30px;
+  border-radius: 10px;
+  background-size: 15px;
+  margin: 10px;
+  border: 1px solid #eee;
+  white-space: nowrap;
+}
+
+.weather-stats .weather-item {
+  display: flex;
+}
+
+.future-forecast {
+  background: rgba(24, 24, 27, 0.8);
+  padding: 35px;
+  position: relative;
+  bottom: -180px;
+  display: flex;
+  color: whitesmoke;
+  width: 100%;
+  align-items: center;
+  overflow-y: hidden;
+  justify-content: center;
+}
+
+.future-forecast .today {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  padding-right: 40px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.future-forecast .w-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.future-forecast .today .day {
+  padding: 5px 15px;
+  background-color: #3a3a3e;
+  border-radius: 50px;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.future-forecast .today .temp {
+  font-size: 18px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.future-forecast .weather-forecast {
+  display: flex;
+}
+
+.weather-forecast .weather-forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  border: 1px solid #eee;
+  padding: 30px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.weather-forecast .weather-forecast-item .day {
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  background: #3a3a3e;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.weather-forecast .weather-forecast-item .temp {
+  font-weight: 100;
+  font-size: 12px;
+}
