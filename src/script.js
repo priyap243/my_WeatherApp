@@ -62,9 +62,6 @@ function displayWeatherCondition(response) {
   document.querySelector("#visibility").innerHTML = Math.round(
     response.data.visibility / 1000
   );
-  document.querySelector("#precipitation").innerHTML = Math.round(
-    response.data.main.pressure
-  );
   document.querySelector("#country").innerHTML = response.data.sys.country;
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
