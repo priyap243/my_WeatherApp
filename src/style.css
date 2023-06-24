@@ -150,15 +150,23 @@ h3 a {
   top: -40px;
 }
 
-.celsius-link {
+#celsius-link {
   text-decoration: none;
   color: whitesmoke;
 }
 
-.farhenheit-link {
+#celsius-link:hover {
+  color: rgba(24, 24, 27, 0.7);
+}
+
+#fahrenheit-link {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 200;
+}
+
+#fahrenheit-link:hover {
+  color: rgba(24, 24, 27, 0.7);
 }
 
 .weather-description {
