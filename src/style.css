@@ -49,6 +49,7 @@ header {
   background-color: whitesmoke;
   color: #3a3a3e;
   margin-left: 20px;
+  transition: all 200ms ease-in-out;
 }
 
 #search-city:hover {
@@ -65,6 +66,7 @@ header {
   background-color: whitesmoke;
   color: #3a3a3e;
   margin-left: 20px;
+  transition: all 200ms ease-in-out;
 }
 
 #current-location:hover {
@@ -193,6 +195,11 @@ h3 a {
   margin: 10px;
   border: 1px solid #eee;
   white-space: nowrap;
+}
+
+.current-info .weather-stats:hover {
+  transform: scale(1.2);
+  filter: contrast(90%);
 }
 
 .weather-stats .weather-item {
