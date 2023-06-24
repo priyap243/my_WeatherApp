@@ -120,6 +120,12 @@ h1 {
   float: right;
   text-align: center;
 }
+#icon {
+  position: relative;
+  top: 5px;
+  left: 20px;
+  text-align: center;
+}
 
 .temperature {
   position: relative;
@@ -160,6 +166,7 @@ h3 a {
   font-weight: 200;
   text-transform: capitalize;
   text-align: center;
+  white-space: nowrap;
 }
 
 .current-info {
@@ -185,10 +192,10 @@ h3 a {
 }
 
 .future-forecast {
-  background: rgba(24, 24, 27, 0.8);
+  background: rgba(24, 24, 27, 0.7);
   padding: 35px;
   position: relative;
-  bottom: -100px;
+  bottom: -114px;
   display: flex;
   color: whitesmoke;
   width: 100%;
