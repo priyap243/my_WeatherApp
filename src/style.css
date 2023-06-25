@@ -265,3 +265,37 @@ a {
 .linkedin-link {
   font-weight: 400;
 }
+
+.night {
+  background: #081839;
+}
+.night .container {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/007/original/pexels-tobias-bj%C3%83%C2%B8rkli-2239485.jpg?1687703058);
+}
+
+.night #search-city {
+  background-color: rgba(24, 24, 27, 0.6);
+  color: whitesmoke;
+}
+
+.night #search-city:hover {
+  opacity: 0.6;
+}
+
+.night #current-location {
+  background-color: rgba(24, 24, 27, 0.6);
+  color: whitesmoke;
+}
+
+.night #search-input {
+  background-color: rgba(24, 24, 27, 0.6);
+  color: whitesmoke;
+}
+
+.night #current-location:hover {
+  opacity: 0.6;
+}
+
+.night a {
+  color: whitesmoke;
+}

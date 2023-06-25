@@ -1,3 +1,5 @@
+//display current date and time
+
 let now = new Date();
 
 let h1 = document.querySelector("h1");
@@ -44,6 +46,16 @@ h1.innerHTML = `${hours}:${minutes}`;
 
 h2.innerHTML = `${day}, ${date} ${month}`;
 
+//Changing theme depending on morning or night
+let hour = hours;
+
+let body = document.querySelector("body");
+
+if (hour >= 19 || hour <= 7) {
+  body.classList.add("night");
+}
+// DISPLAY 6 DAY WEATHER FORECAST
+
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
@@ -51,6 +63,9 @@ function formatDay(timestamp) {
 
   return days[day];
 }
+// Add a search engine, when searching for a city (i.e. Paris),
+// display the city name on the page and current temperature
+//after the user submits the form.
 
 function displayForecast(response) {
   let forecast = response.data.daily;
@@ -144,6 +159,7 @@ function handleSubmit(event) {
   let city = document.querySelector("#search-input").value;
   searchCity(city);
 }
+// Get current temperature from current position
 
 function searchLocation(position) {
   let apiKey = "b87b61c011c1d75a7df966f24970e58f";
@@ -155,6 +171,8 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+
+// Conversion fahrenheit to celsuis
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
