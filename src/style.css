@@ -41,6 +41,10 @@ header {
   border: 0px solid whitesmoke;
 }
 
+#search-input:focus {
+  outline: none;
+}
+
 #search-city {
   margin-top: 0em;
   padding: 5px 15px;
@@ -216,7 +220,7 @@ h3 a {
   padding: 40px;
   position: relative;
   left: 10px;
-  bottom: -92px;
+  bottom: -94px;
   display: flex;
   color: whitesmoke;
   width: 100%;
