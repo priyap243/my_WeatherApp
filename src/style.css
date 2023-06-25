@@ -1,257 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap");
 
-   
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Playfair", serif;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(11, 160, 164, 0.2);
+  height: 100%;
+  margin: 0;
+}
 
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        font-family: "Playfair", serif;
-        font-family: "Poppins", sans-serif;
-        background-color: rgb(11, 160, 164, 0.2);
-        height: 100%;
-        margin: 0;
-      }
+.container {
+  color: whitesmoke;
+  padding: 20px 50px;
+  background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/428/original/sandbeach.jpeg?1686655204);
+  background-repeat: no-repeat;
+  margin: 30px 50px;
+  overflow-y: hidden;
+  height: 91vh;
+  background-size: 100% 800px;
+  min-height: 100%;
+  border-radius: 20px;
+  justify-content: center;
+  border: 15px solid rgba(24, 24, 27, 0.7);
+}
 
-      .container {
-        color: whitesmoke;
-        padding: 20px 50px;
-        background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/428/original/sandbeach.jpeg?1686655204);
-        background-repeat: no-repeat;
-        margin: 30px 50px;
-        overflow-y: hidden;
-        height: 91vh;
-        background-size: 100% 800px;
-        min-height: 100%;
-        border-radius: 20px;
-        justify-content: center;
-        border: 15px solid rgba(24, 24, 27, 0.7);
-      }
+header {
+  display: block;
+  margin-top: 0em;
+  margin-left: 50px;
+}
 
-      header {
-        display: block;
-        margin-top: 0em;
-        margin-left: 50px;
-      }
+#search-input {
+  margin-top: 0em;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: 0px solid whitesmoke;
+}
 
-      #search-input {
-        margin-top: 0em;
-        padding: 8px 20px;
-        border-radius: 8px;
-        border: 0px solid whitesmoke;
-      }
+#search-city {
+  margin-top: 0em;
+  padding: 5px 15px;
+  border-radius: 8px;
+  border: 0px solid whitesmoke;
+  background-color: whitesmoke;
+  color: #3a3a3e;
+  margin-left: 20px;
+  transition: all 200ms ease-in-out;
+}
 
-      #search-city {
-        margin-top: 0em;
-        padding: 5px 15px;
-        border-radius: 8px;
-        border: 0px solid whitesmoke;
-        background-color: whitesmoke;
-        color: #3a3a3e;
-        margin-left: 20px;
-        transition: all 200ms ease-in-out;
-      }
+#search-city:hover {
+  background-color: rgba(24, 24, 27, 0.6);
+  color: whitesmoke;
+  cursor: pointer;
+}
 
-      #search-city:hover {
-        background-color: rgba(24, 24, 27, 0.6);
-        color: whitesmoke;
-        cursor: pointer;
-      }
+#current-location {
+  margin-top: 0em;
+  padding: 5px 15px;
+  border-radius: 8px;
+  border: 0px solid whitesmoke;
+  background-color: whitesmoke;
+  color: #3a3a3e;
+  margin-left: 20px;
+  transition: all 200ms ease-in-out;
+}
 
-      #current-location {
-        margin-top: 0em;
-        padding: 5px 15px;
-        border-radius: 8px;
-        border: 0px solid whitesmoke;
-        background-color: whitesmoke;
-        color: #3a3a3e;
-        margin-left: 20px;
-        transition: all 200ms ease-in-out;
-      }
+#current-location:hover {
+  background-color: rgba(24, 24, 27, 0.6);
+  color: whitesmoke;
+  cursor: pointer;
+}
 
-      #current-location:hover {
-        background-color: rgba(24, 24, 27, 0.6);
-        color: whitesmoke;
-        cursor: pointer;
-      }
+.date-container {
+  font-weight: 100;
+  margin-top: 20px;
+}
 
-      .date-container {
-        font-weight: 100;
-        margin-top: 20px;
-      }
+h1 {
+  font-size: 70px;
+  font-weight: 200;
+}
 
-      h1 {
-        font-size: 70px;
-        font-weight: 200;
-      }
+.date-container .am-pm {
+  font-size: 30px;
+  font-weight: 200;
+  margin-left: 20px;
+}
 
-      .date-container .am-pm {
-        font-size: 30px;
-        font-weight: 200;
-        margin-left: 20px;
-      }
+.date-container h2 {
+  font-size: 30px;
+  font-weight: 200;
+}
 
-      .date-container h2 {
-        font-size: 30px;
-        font-weight: 200;
-      }
+.place-container {
+  top: 0px;
+  text-align: end;
+  float: right;
+}
 
-      .place-container {
-        top: 0px;
-        text-align: end;
-        float: right;
-      }
+.place-container .time-zone {
+  font-size: 30px;
+  font-weight: 200;
+  text-align: end;
+  text-transform: capitalize;
+}
 
-      .place-container .time-zone {
-        font-size: 30px;
-        font-weight: 200;
-        text-align: end;
-        text-transform: capitalize;
-      }
+.place-container .location-icon {
+  font-size: 25px;
+  padding: 8px;
+}
 
-      .place-container .location-icon {
-        font-size: 25px;
-        padding: 8px;
-      }
+.place-container .country {
+  font-size: 15px;
+  font-weight: 700;
+  right: 30px;
+  position: relative;
+  float: right;
+  text-align: center;
+}
 
-      .place-container .country {
-        font-size: 15px;
-        font-weight: 700;
-        right: 30px;
-        position: relative;
-        float: right;
-        text-align: center;
-      }
+#icon {
+  position: relative;
+  top: 5px;
+  left: 20px;
+  text-align: center;
+}
 
-      #icon {
-        position: relative;
-        top: 5px;
-        left: 20px;
-        text-align: center;
-      }
+.temperature {
+  position: relative;
+  margin-top: 120px;
+  left: 150px;
+  text-align: justify;
+}
 
-      .temperature {
-        position: relative;
-        margin-top: 120px;
-        left: 150px;
-        text-align: justify;
-      }
+.current-temperature {
+  font-size: 80px;
+  font-weight: 200;
+}
 
-      .current-temperature {
-        font-size: 80px;
-        font-weight: 200;
-      }
+h3 a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 30px;
+}
 
-      h3 a {
-        text-decoration: none;
-        color: whitesmoke;
-        font-size: 30px;
-      }
+.units {
+  position: relative;
+  top: -40px;
+}
 
-      .units {
-        position: relative;
-        top: -40px;
-      }
+#celsius-link {
+  text-decoration: none;
+  color: whitesmoke;
+}
 
-      #celsius-link {
-        text-decoration: none;
-        color: whitesmoke;
-      }
+#celsius-link:hover {
+  color: rgba(24, 24, 27, 0.7);
+}
+#fahrenheit-link {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 200;
+}
 
-      #celsius-link:hover {
-        color: rgba(24, 24, 27, 0.7);
-      }
-      #fahrenheit-link {
-        text-decoration: none;
-        color: whitesmoke;
-        font-weight: 200;
-      }
+#fahrenheit-link:hover {
+  color: rgba(24, 24, 27, 0.7);
+}
 
-      #fahrenheit-link:hover {
-        color: rgba(24, 24, 27, 0.7);
-      }
+.weather-description {
+  font-size: 30px;
+  font-weight: 200;
+  text-transform: capitalize;
+  text-align: center;
+  white-space: nowrap;
+}
 
-      .weather-description {
-        font-size: 30px;
-        font-weight: 200;
-        text-transform: capitalize;
-        text-align: center;
-        white-space: nowrap;
-      }
+.current-info {
+  justify-content: space-between;
+  display: flex;
+}
 
-      .current-info {
-        justify-content: space-between;
-        display: flex;
-      }
+.current-info .weather-stats {
+  background: rgba(24, 24, 27, 0.6);
+  position: absolute;
+  left: 400px;
+  top: 220px;
+  padding: 30px;
+  border-radius: 10px;
+  background-size: 15px;
+  margin: 10px;
+  border: 1px solid #eee;
+  white-space: nowrap;
+}
 
-      .current-info .weather-stats {
-        background: rgba(24, 24, 27, 0.6);
-        position: absolute;
-        left: 400px;
-        top: 220px;
-        padding: 30px;
-        border-radius: 10px;
-        background-size: 15px;
-        margin: 10px;
-        border: 1px solid #eee;
-        white-space: nowrap;
-      }
+.current-info .weather-stats:hover {
+  transform: scale(1.2);
+  filter: contrast(90%);
+}
 
-      .current-info .weather-stats:hover {
-        transform: scale(1.2);
-        filter: contrast(90%);
-      }
+.weather-stats .weather-item {
+  display: flex;
+}
 
-      .weather-stats .weather-item {
-        display: flex;
-      }
+#forecast {
+  color: whitesmoke;
+  display: flex;
+}
 
-      #forecast {
-        color: whitesmoke;
-      }
+#forecast-row {
+  background-color: rgba(24, 24, 27, 0.7);
+  padding: 40px;
+  position: relative;
+  left: 10px;
+  bottom: -92px;
+  display: flex;
+  color: whitesmoke;
+  width: 100%;
+  align-items: center;
+  overflow-y: hidden;
+  justify-content: center;
+}
 
-      .weather-forecast-date {
-        padding: 5px 15px;
-        margin-bottom: 10px;
-        background: #3a3a3e;
-        border-radius: 50px;
-        text-align: center;
-      }
+.weather-forecast #weather-forecast-item {
+  box-shadow: 3px 3px 10px 1px white inset;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
 
-      #forecast-row {
-        background-color: rgba(24, 24, 27, 0.7);
-      }
+.weather-forecast-date {
+  text-align: center;
+}
 
-      .weather-forecast .weather-forecast-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0 10px;
-        border: 1px solid #eee;
-        padding: 22px 30px;
-        border-radius: 10px;
-        background: rgba(0, 0, 0, 0.2);
-      }
+.forecast-icon {
+  margin-left: 50px;
+  width: 60px;
+  margin-bottom: 10px;
+}
 
-      .weather-forecast-temperatures {
-        font-weight: 100;
-        font-size: 12px;
-      }
+.weather-forecast-temperatures {
+  font-weight: 100;
+  font-size: 12px;
+  text-align: center;
+}
 
-      footer {
-        text-align: center;
-        padding: 15px auto;
-        position: relative;
-        bottom: 20px;
-      }
+.weather-forecast-temperature-max {
+  font-weight: 400;
+}
 
-      a {
-        text-decoration: none;
-        color: #3a3a3e;
-      }
-      .linkedin-link {
-        font-weight: 400;
-      }
+footer {
+  text-align: center;
+  padding: 15px auto;
+  position: relative;
+  bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #3a3a3e;
+}
+.linkedin-link {
+  font-weight: 400;
+}

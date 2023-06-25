@@ -73,12 +73,13 @@ function displayForecast(response) {
                 }@2x.png"
                 alt=""
                 width="42"
+                class="forecast-icon"
               />
               <div class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max"> ${Math.round(
+                <strong>Max - </strong><span class="weather-forecast-temperature-max"> ${Math.round(
                   forecastDay.temp.max
-                )}° </span>
-                <span class="weather-forecast-temperature-min"> ${Math.round(
+                )}° </span> <br/>
+                Min - <span class="weather-forecast-temperature-min"> ${Math.round(
                   forecastDay.temp.min
                 )}° </span>
               </div>
@@ -93,8 +94,8 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   console.log(coordinates);
-  let apiKey = "b87b61c011c1d75a7df966f24970e58f";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiKeyOneCall = "001bc651977f4b024af4d84282b0f02a";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKeyOneCall}&units=metric`;
   console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
