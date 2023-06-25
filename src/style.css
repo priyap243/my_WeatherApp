@@ -217,10 +217,10 @@ h3 a {
 
 #forecast-row {
   background-color: rgba(24, 24, 27, 0.7);
-  padding: 40px;
+  padding: 20px;
   position: relative;
   left: 10px;
-  bottom: -94px;
+  bottom: -120px;
   display: flex;
   color: whitesmoke;
   width: 100%;
