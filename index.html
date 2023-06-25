@@ -29,6 +29,7 @@
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
+
   <body>
     <div class="container">
       <header>
@@ -48,6 +49,7 @@
       <div class="current-info">
         <div class="date-container">
           <h1 class="time" id="time">05:15 <span class="am-pm">PM</span></h1>
+
           <h2 class="date" id="date">Monday, 8 June</h2>
         </div>
 
@@ -116,64 +118,7 @@
           <img src="" id="icon" />
         </div>
       </div>
-
-      <div class="future-forecast">
-        <div class="today" id="current-temp">
-          <i class="fa-regular fa-cloud-sun-rain w-icon"></i>
-          <div class="day">Monday</div>
-          <div class="temp">
-            <div class="weather-forecast-max-temp">Max - 30°C</div>
-            <div class="weather-forecast-min-temp">Min - 26°C</div>
-          </div>
-        </div>
-
-        <div class="weather-forecast" id="weather-forecast">
-          <div class="weather-forecast-item">
-            <div class="day">Tue</div>
-            <i class="fa-regular fa-cloud-sun-rain w-icon"></i>
-            <div class="temp">
-              <div class="weather-forecast-max-temp">Max - 25°C</div>
-              <div class="weather-forecast-min-temp">Min - 20°C</div>
-            </div>
-          </div>
-
-          <div class="weather-forecast-item">
-            <div class="day">Wed</div>
-            <i class="fa-solid fa-sun w-icon"></i>
-            <div class="temp">
-              <div class="weather-forecast-max-temp">Max - 33°C</div>
-              <div class="weather-forecast-min-temp">Min - 28°C</div>
-            </div>
-          </div>
-
-          <div class="weather-forecast-item">
-            <div class="day">Thur</div>
-            <i class="fa-solid fa-cloud-sun w-icon"></i>
-            <div class="temp">
-              <div class="weather-forecast-max-temp">Max - 31°C</div>
-              <div class="weather-forecast-min-temp">Min - 25°C</div>
-            </div>
-          </div>
-
-          <div class="weather-forecast-item">
-            <div class="day">Fri</div>
-            <i class="fa-solid fa-sun w-icon"></i>
-            <div class="temp">
-              <div class="weather-forecast-max-temp">Max - 34°C</div>
-              <div class="weather-forecast-min-temp">Min - 28°C</div>
-            </div>
-          </div>
-
-          <div class="weather-forecast-item">
-            <div class="day">Sat</div>
-            <i class="fa-solid fa-cloud-sun w-icon"></i>
-            <div class="temp">
-              <div class="weather-forecast-max-temp">Max - 28°C</div>
-              <div class="weather-forecast-min-temp">Min - 24°C</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="weather-forecast" id="forecast"></div>
     </div>
     <footer>
       <a href="https://github.com/priyap243/my_WeatherApp" class="github-link"
